@@ -681,22 +681,22 @@ img {
   margin-top: -30px;
 }
 
-/* .works-thumb {
+.works-thumb {
   position: relative;
+  overflow: hidden;
 }
 
-.works-thumb:hover::before {
-  opacity: 1;
+.works-thumb:hover .works-overlay {
+  transform: translateY(0);
 }
 
-.works-thumb::before {
-  display: inline-block;
-  content: "";
-
+.works-overlay {
   position: absolute;
-  margin: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+
   padding: 63px 24px;
   background: rgba(33, 150, 243, 0.9);
 
@@ -708,8 +708,9 @@ img {
 
   color: var(--primary-white-color);
 
-  opacity: 0;
-} */
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+}
 
 .works-item {
   flex-basis: calc(100% / 3 - 30px);
