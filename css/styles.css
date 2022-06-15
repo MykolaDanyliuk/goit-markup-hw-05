@@ -142,6 +142,7 @@ img {
 
 .header-list {
   display: flex;
+  position: relative;
 }
 
 .header-item:not(:last-child) {
@@ -151,6 +152,22 @@ img {
 /* .header-list .header-item + .header-item {
   margin-left: 50px;
 } */
+
+/* .header-item {
+  display: flex;
+  position: relative;
+} */
+
+.header-list .current::after {
+  content: "";
+
+  position: absolute;
+  top: 100%;
+  width: 48px;
+  height: 4px;
+  background: var(--accent-color);
+  border-radius: 2px;
+}
 
 .header-link {
   display: block;
@@ -226,7 +243,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 .hero-title {
