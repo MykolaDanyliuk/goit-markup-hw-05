@@ -183,6 +183,7 @@ img {
   line-height: 1.4;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:hover,
@@ -203,6 +204,7 @@ img {
   line-height: 1.4;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-icon {
@@ -275,6 +277,9 @@ img {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -522,11 +527,13 @@ img {
   border-radius: 50%;
   background-color: var(--primary-white-color);
   color: var(--icon-color);
-  /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-icon {
   fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link:hover,
@@ -584,10 +591,12 @@ img {
   height: 100%;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon {
   fill: var(--icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover .clients-icon,
@@ -618,6 +627,7 @@ img {
   font-size: 14px;
   line-height: 1.7;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-address:hover,
@@ -633,6 +643,7 @@ img {
   font-size: 14px;
   line-height: 1.7;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contacts:hover,
@@ -692,6 +703,7 @@ img {
   height: 100%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-icon {
@@ -723,6 +735,8 @@ img {
 
   color: var(--primary-text-color);
   background-color: var(--team-button-bg-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   font-family: inherit;
   font-weight: 500;
@@ -785,7 +799,6 @@ img {
 
   transform: translateY(100%);
   transition: transform 250ms ease;
-  /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .works-item {
