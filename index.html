@@ -18,8 +18,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <!--Шапка сайта-->
     <header class="header-page">
@@ -33,17 +38,14 @@
             <li class="header-item">
               <a href="" class="header-link current">Студия</a>
             </li>
-
             <li class="header-item">
               <a href="./portfolio.html" class="header-link">Портфолио</a>
             </li>
-
             <li class="header-item">
               <a href="" class="header-link">Контакты</a>
             </li>
           </ul>
         </nav>
-
         <ul class="contacts-list list">
           <li class="contacts-item mail">
             <a href="mailto:info@devstudio.com" class="contacts-link"
@@ -52,7 +54,6 @@
               >info@devstudio.com</a
             >
           </li>
-
           <li class="contacts-item tel">
             <a href="tel.:+380961111111" class="contacts-link"
               ><svg class="contacts-icon" width="12" height="16">
@@ -70,22 +71,13 @@
       <!--Герой-->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">
+          <h1 class="hero-title animate__animated animate__headShake">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button data-modal-open type="button" class="hero-btn pointer">
+          <button type="button" class="hero-btn pointer" data-modal-open>
             Заказать услугу
           </button>
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <button data-modal-close class="modal-close-btn">
-                <svg class="close-icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-close-black"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -106,7 +98,6 @@
                 формированию позиции.
               </p>
             </li>
-
             <li class="feature-item">
               <div class="thumb">
                 <svg class="feature-icon" width="70" height="70">
@@ -119,7 +110,6 @@
                 кадров влечет за собой.
               </p>
             </li>
-
             <li class="feature-item">
               <div class="thumb">
                 <svg class="feature-icon" width="70" height="70">
@@ -132,7 +122,6 @@
                 степени обуславливает.
               </p>
             </li>
-
             <li class="feature-item">
               <div class="thumb">
                 <svg class="feature-icon" width="70" height="70">
@@ -148,7 +137,6 @@
           </ul>
         </div>
       </section>
-
       <!--Чем мы занимаемся About-->
       <section class="about">
         <div class="container">
@@ -165,7 +153,6 @@
                 <p class="about-label">Десктопные приложения</p>
               </div>
             </li>
-
             <li class="about-item">
               <div class="about-thumb">
                 <img
@@ -176,7 +163,6 @@
                 <p class="about-label">Мобильные приложения</p>
               </div>
             </li>
-
             <li class="about-item">
               <div class="about-thumb">
                 <img
@@ -237,7 +223,6 @@
                 </li>
               </ul>
             </li>
-
             <li class="team-card">
               <img
                 src="./images/repina.jpg"
@@ -279,7 +264,6 @@
                 </li>
               </ul>
             </li>
-
             <li class="team-card">
               <img
                 src="./images/tarasov.jpg"
@@ -321,7 +305,6 @@
                 </li>
               </ul>
             </li>
-
             <li class="team-card">
               <img
                 src="./images/ermakov.jpg"
@@ -433,7 +416,6 @@
                   >г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
-
               <li class="address-items">
                 <a href="mailto:info@devstudio.com" class="footer-contacts"
                   >info@devstudio.com</a
@@ -447,7 +429,6 @@
             </ul>
           </address>
         </div>
-
         <div class="footer-icon">
           <h2 class="footer-title">Присоединяйтесь</h2>
           <ul class="footer-soc-list list">
@@ -483,6 +464,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="close-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
